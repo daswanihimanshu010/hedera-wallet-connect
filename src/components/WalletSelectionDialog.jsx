@@ -1,9 +1,7 @@
+import React from 'react';
 import { Button, Dialog, Stack } from "@mui/material";
-import { connectToBladeWallet } from "../services/wallets/blade/bladeClient";
 import { hashConnect } from "../services/wallets/hashconnect/hashconnectClient";
-import { connectToMetamask } from "../services/wallets/metamask/metamaskClient";
 import HashPackLogo from "../assets/hashpack-logo.svg";
-import MetamaskLogo from "../assets/metamask-logo.svg";
 
 
 export const WalletSelectionDialog = ({open, onClose}) => {
@@ -27,30 +25,7 @@ export const WalletSelectionDialog = ({open, onClose}) => {
           />
           HashPack
         </Button>
-        <Button
-          variant="contained"
-          onClick={() => {
-            connectToBladeWallet();
-          }}
-        >
-          Blade
-        </Button>
-        <Button
-          variant="contained"
-          onClick={() => {
-            connectToMetamask();
-          }}
-        >
-          <img
-            src={MetamaskLogo}
-            alt='metamask logo'
-            className='walletLogoImage'
-            style={{
-              padding: '4px 4px 4px 0px'
-            }}
-          />
-          Metamask
-        </Button>
+        
       </Stack>
     </Dialog>
   );

@@ -1,3 +1,4 @@
+import React from 'react';
 import { AppBar, Button, Toolbar, Typography } from '@mui/material';
 import { useEffect, useState } from 'react';
 import HBARLogo from "../assets/hbar-logo.svg";

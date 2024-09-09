@@ -1,3 +1,4 @@
+import React from 'react';
 import Footer from './components/Footer';
 import CssBaseline from '@mui/material/CssBaseline';
 import NavBar from './components/Navbar';

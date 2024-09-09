@@ -1,16 +1,54 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf=8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta name="description" content="" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <title></title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Hedera dApp</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mui/material@5.0.0-alpha.36/dist/material-ui.min.css">
+  <style>
+    body {
+      background-color: #222222;
+      color: white;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .hbarLogoImg {
+      width: 40px;
+    }
+
+    .walletLogoImage {
+      width: 24px;
+      margin-right: 8px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      padding: 16px;
+      background-color: #333;
+    }
+
+    nav img {
+      margin-right: 16px;
+    }
+
+    main {
+      padding: 16px;
+    }
+
+    footer {
+      padding: 16px;
+      text-align: center;
+      background-color: #333;
+    }
+  </style>
+  <script defer="defer" src="bundle.js"></script>
+</head>
+
+<body>
+  <div id="root"></div>
+</body>
+
 </html>

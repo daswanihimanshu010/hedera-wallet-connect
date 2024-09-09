@@ -1,3 +1,4 @@
+import React from 'react';
 import { Box } from '@mui/material';
 import BuiltOnHedera from "../assets/built-on-hedera.svg";
 
